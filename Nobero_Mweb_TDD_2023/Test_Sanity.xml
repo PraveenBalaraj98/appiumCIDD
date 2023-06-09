@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite">
+  <test thread-count="5" name="Sanity Test">
+      <groups>
+            <run>
+                <include name="sanity" />
+            </run>
+        </groups>
+    <classes>
+      <class name="com.qa.nobero.cartTest.cartTest"/>
+      <class name="com.qa.nobero.plpTest.PLPTest"/>
+      <class name="com.qa.nobero.pdpTest.PDPTest"/>
+      <class name="com.qa.nobero.searchTest.SearchTest">
+      <parameter name="searchTest"  value="tees"/>
+      </class>
+    </classes>
+  </test> <!-- Sanity Test -->
+</suite> <!-- Sanity Suite -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.nobero.cartTest.cartTest">
+	<!--	  <methods>
+			 <include name="ToVerifyProductIsAddedToCartTest"/> 
+			 <include name="ToVerifyProductIsAddedToCartAfterSearchTest"/> 
+			 <include name="ToVerifyApplyFilterforColorTest"/> 
+			 <include name="ToVerifyApplyFilterforSizeTest"/> 
+			 <include name="ToVerifyApplyFilterforAvailabilityTest"/> 
+			 <include name="ToVerifySortByBestSellingTest"/> 
+			 <include name="ToVerifySortByFeaturedTest"/> 
+			 <include name="ToVerifySortByNewArrivalTest"/> 
+			 <include name="ToVerifySortByPriceLowToHighTest"/> 
+			 <include name="ToVerifySortByPriceHighToLowTest"/> 
+			 <include name="ToVerifyProductSalesCountisEnabledInCartpage"/> 
+			 <include name="ToVerifyTotalCartSummary"/> 
+			 <include name="ToVerifyThatProductIsIncrementedinCartPage"/> 
+			 <include name="ToVerifyThatProductIsDecrementeInCartPage"/> 
+			 <include name="ToVerifyThatProductRemoveFeatureIsEnabledInCartPage"/> 
+		  </methods> -->
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

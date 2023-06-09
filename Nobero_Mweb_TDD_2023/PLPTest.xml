@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.nobero.plpTest.PLPTest">
+     <!-- <methods>			 
+			 <include name="ToVerifySummerSetsPageFromMenPageTest"/> 
+			 <include name="ToVerifySummerShortsPageFromMenPageTest"/> 
+			 <include name="ToVerifySummerTeesPageFromMenPageTest"/> 
+			 <include name="ToVerifyPickany3at999_PageFromMenPageTest "/>
+			 <include name="ToVerifyTopPicksShopAllProductsPageFromMenPageTest"/> 
+			  <include name="ToVerifyComfortJoggersPageFromMenPageTest"/> 
+			  <include name="ToVerifyMensPageTest"/> 
+			   <include name="ToVerifyMenSummerTeesPageTest"/> 			  
+			  <include name="ToVerifyCoOrdSetPageFromHamburgerPageTest"/> 
+			 <include name="ToVerifyCoOrdSetPageFromMenPageTest"/>  
+			 <include name="ToVerifyCoOrdSetPageFromWomenPageTest"/> 
+			 <include name="ToVerifyCoOrdSetPageTest"/>
+			  <include name="ToVerifyCoOrdSetPageTest"/>
+			  <include name="ToVerifyNewArrivalsPageTest"/>			  
+			  <include name="ToVerifyOversizedTShirtPageFromWomenPageTest"/> 
+			  <include name="ToVerifyComfortJoggersPageFromWomenPageTest"/> 
+			 <include name="ToVerifySummerShortsPageFromWomenPageTest"/>  
+			 <include name="ToVerifySummerTeesPageFromWomenPageTest"/> 
+			 <include name="ToVerifyTexturedCollectionPageFromWomenPageTest"/> 
+		     <include name="ToVerifyTopPicksShopAllProductsPageFromWomenPage"/> 
+			 <include name="ToVerifyWomensPageTest"/> 
+			 <include name="ToVerifyPickany3at999_PageFromWomenPageTest"/>
+			 <include name="ToVerifyThatProductIsMovedToCartAfterValidSearchTest"/> 			
+			 <include name="ToVerifyApplyFilterforPrice₹1000to₹1500Test"/> 
+			 <include name="ToVerifyApplyFilterforPrice₹1500to₹2000Test"/> 
+			 <include name="ToVerifyApplyFilterforPrice₹500to₹1000Test"/>
+			 <include name="ToVerifyApplyFilterforPricemorethan2000Test"/> 
+			 <include name="ToVerifyApplyFilterforPriceLessthan₹500Test"/> 
+			 <include name="ToVerifyApplyColorFilterValidateColorinCartPageTest"/> 
+			 <include name="ToVerifyApplyColorFiltervalidateColorinPDPPageTest"/> 
+			 <include name="ToVerifyApplySizeFilterValidateSizeInPDPPageTest"/> 
+			 <include name="ToVerifyApplySizeFilterValidateSizeInCartPageTest"/>  
+			 <include name="ToVerifyBestSellerPageTest"/>
+			 <include name="ToVerifyApplyFilterforColorTest"/> 
+			 <include name="ToVerifyApplyFilterforSizeTest"/> 
+			 <include name="ToVerifyApplyFilterforAvailabilityInStockTest"/> 
+			 <include name="ToVerifyApplyFilterforAvailalityOutOfStockTest"/>
+		     <include name="ToVerifySortByBestSellingTest"/> 
+			 <include name="VerifySortByFeaturedTest"/> 
+			 <include name="ToVerifySortByNewArrivalTest "/> 
+			 <include name="ToVerifySortByPriceLowToHighTest"/> 
+			 <include name="ToVeritySortByPriceHighTolowTest"/> 
+			 <include name="ToVerifyPLPproductCount"/> 
+			 <exclude name="ToVerifyReviewCountFromPLPtoPDPpage"/> 
+			 <include name="ToVerifyProductinPLPCartAfterAddingProdtuctToCart"/> 
+		  </methods> -->
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

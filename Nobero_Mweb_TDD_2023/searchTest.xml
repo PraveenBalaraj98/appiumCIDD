@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	  <groups>
+		<run>
+			<include name="smoke"></include>
+		</run>
+	</groups>
+	<test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.nobero.searchTest.SearchTest">
+		<!--<parameter name="searchTest"  value="tees"/>-->
+		  <methods>
+			 <include name="ToVerifyApplyFilterPriceAfterValidSearchTest"/> 
+			 <include name="ToVerifyEmptyCartAfterProductSearch"/> 
+			 <include name="ToVerifyApplyFilterColorAfterValidSearchTest"/> 
+		 	 <include name="ToVerifyApplyFilterSizeIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifyApplyFilterAvailabilityInStockIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifyApplyFilterAvailabilityOutOfStockIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifySortByFeaturedIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifySortByNewArrivalIsEnabledAfterValidSearchTest"/> 
+		     <include name="ToVerifySortByPriceLowToHighIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifySortByPriceHighToLowIsEnabledAfterValidSearchTest"/> 
+			 <include name="ToVerifyThatPDPIsDisplayedAfterValidSearchTest"/> 
+			 <include name="ToVerifyThatProductIsMovedToCartAfterValidSearchTest"/> 
+			 <include name="ToVerifyThatCheckOutIsEnabledAfterProductSearch"/> 
+			 <include name="ToVerifySizeGuideAfterValidSearchTest"/> 
+			 <include name="ToVerifyNotifyMeWhenAvailableAfterValidSearchTest"/> 
+			 <include name="ToVerifyApplyFilterColorAfterValidSearchTest"/>
+			 
+		  </methods> 
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
