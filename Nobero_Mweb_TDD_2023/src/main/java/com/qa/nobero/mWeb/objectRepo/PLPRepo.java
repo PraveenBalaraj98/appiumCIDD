@@ -106,7 +106,7 @@ public class PLPRepo {
 	private WebElement lessthanRs500;
 
 	//@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='₹500 - ₹1000']")
-	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[text()='₹500 - ₹1000']")
+	@FindBy(xpath="//form[@id='submit-mobile-form']/descendant::span[contains(text(),'500 - ') and contains(text(),'1000')]")
 
 	private WebElement Rs500toRs1000;
 
