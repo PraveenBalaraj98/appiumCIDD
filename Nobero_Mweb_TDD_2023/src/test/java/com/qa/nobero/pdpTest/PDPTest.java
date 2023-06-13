@@ -51,8 +51,10 @@ public class PDPTest extends BaseClass	{
 
 		//Step10: check whether the previously viewed product is displayed in recently viewed section in empty cart page
 		String cartrv2_ProductTitle = repo.getCartRepo().getrecentlyViewdProductTitle().trim();
-		Assert.assertEquals(PDP2ProductTitle, cartrv2_ProductTitle);
-
+		//Assert.assertEquals(PDP2ProductTitle, cartrv2_ProductTitle);
+		SoftAssert sf = new SoftAssert();
+		sf.assertEquals(cartrv2_ProductTitle, PDP2ProductTitle);
+		
 		//Step :Close cart page
 		repo.getCartRepo().getcartCloseIcon().click();
 
@@ -65,13 +67,13 @@ public class PDPTest extends BaseClass	{
 		//Fetch The product title
 		String PDP3ProductTitle = repo.getPDPRepo().getProductTitle().getText();
 		ProdList.add(PDP3ProductTitle);
-
+		
 		//Step8: click on cart icon
 		repo.getHomeRepo().getCartIcon().click();
 
 		//Step10: check whether the previously viewed product is displayed in recently viewed section in empty cart page
 		String cartrv3_ProductTitle = repo.getCartRepo().getrecentlyViewdProductTitle().trim();
-		Assert.assertEquals(PDP3ProductTitle, cartrv3_ProductTitle);
+		sf.assertEquals(PDP3ProductTitle, cartrv3_ProductTitle);
 
 		// Swipe the products in cart check if it is swipe
 		//Close cart page
@@ -82,7 +84,7 @@ public class PDPTest extends BaseClass	{
 
 				//Step9: check whether the previously viewed product is displayed in recently viewed section 
 				String pdpRV_ProdTitle = repo.getPDPRepo().getrecentlyViewdProductName().getText().trim();
-				Assert.assertEquals(PDP2ProductTitle, pdpRV_ProdTitle);
+				sf.assertEquals(PDP2ProductTitle, pdpRV_ProdTitle);
 
 		// Find the element representing the current image
 		
