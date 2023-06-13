@@ -46,7 +46,8 @@ public class ITestListenerImpClass implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 		FileUtility fileUtil = new FileUtility();
-		ExtentSparkReporter reporter = new ExtentSparkReporter("../Nobero-Mweb-AppiumSelenium-HyF-2023/reports/extentReports/"+JavaUtility.getSystemDateTime()+"ExtentReport.html");
+		//ExtentSparkReporter reporter = new ExtentSparkReporter("../Nobero-Mweb-AppiumSelenium-HyF-2023/reports/extentReports/"+JavaUtility.getSystemDateTime()+"ExtentReport.html");
+		ExtentSparkReporter reporter = new ExtentSparkReporter("../Nobero-Mweb-AppiumSelenium-HyF-2023/reports/extentReports/ExtentReport.html");
 		reporter.config().setDocumentTitle("Nobero");
 		reporter.config().setReportName("App Test");
 		reporter.config().setTheme(Theme.STANDARD);
