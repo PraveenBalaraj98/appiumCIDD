@@ -409,6 +409,7 @@ public class cartTest extends BaseClass {
 			    wUtil.scrollToElementJS(driver, repo.getCartRepo().geViewProduct());
 			    repo.getCartRepo().geViewProduct().click();
 			    
+		Thread.sleep(4000);
 			    //Add to cart
 				repo.getPDPRepo().getAddToCart().click();
 				
